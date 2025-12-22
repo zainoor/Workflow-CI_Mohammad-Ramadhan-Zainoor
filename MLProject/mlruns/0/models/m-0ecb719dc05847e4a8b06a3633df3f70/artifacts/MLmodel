@@ -1,0 +1,22 @@
+artifact_path: file:///D:/ASAH/Proyek Membangun Sistem Machine Learning/Workflow-Ci_Mohammad-Ramadhan-Zainoor/MLProject/mlruns/0/models/m-0ecb719dc05847e4a8b06a3633df3f70/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.8.0
+model_id: m-0ecb719dc05847e4a8b06a3633df3f70
+model_size_bytes: 1087
+model_uuid: m-0ecb719dc05847e4a8b06a3633df3f70
+prompts: null
+run_id: ca78d68f7e4444628968f1ebabb1fd33
+utc_time_created: '2025-12-22 07:10:08.256679'
