@@ -1,12 +1,24 @@
-name: telco-churn-env
-channels:
-  - defaults
-dependencies:
-  - python=3.12
-  - pip
-  - pip:
-      - numpy
-      - pandas
-      - scikit-learn
-      - mlflow
-      - joblib
+name: CI - Train MLflow Project
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MLflow
+        run: |
+          pip install mlflow scikit-learn joblib
+
+      - name: Run MLflow Project
+        run: |
+          cd MLProject
+          mlflow run .

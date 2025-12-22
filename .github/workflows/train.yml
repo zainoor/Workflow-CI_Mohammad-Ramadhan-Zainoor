@@ -18,12 +18,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install MLflow
         run: |
-          pip install --upgrade pip
-          pip install mlflow scikit-learn joblib pandas numpy
+          pip install mlflow scikit-learn joblib
 
       - name: Run MLflow Project
         run: |
+          cd ..
           cd MLProject
           mlflow run .
