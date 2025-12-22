@@ -1,1 +1,1 @@
-https://hub.docker.com/repository/docker/zainoor/telco-churn-mlflow
+https://hub.docker.com/r/zainoor/telco-churn-mlflow
