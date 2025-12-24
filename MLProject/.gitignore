@@ -1,2 +1,4 @@
 mlruns
 mlflow.db
+logreg_model
+docker_model
